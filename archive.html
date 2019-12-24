@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Archive"
+subtitle: "The archive of all published blog posts."
+description: "The archive of all published blog posts."
+image: "img/post-bg-00.jpg"
+---
+<!-- Archive template modified from reyhan.org/2013/03/jekyll-archive-without-plugins.html -->
+<section class="archive">
+	{%for post in site.posts %}
+		{% unless post.next %}
+			<h3>{{ post.category}}</h3>
+			<ul>
+		{% else %}
+			{% capture categoty %}{{ post.category}}{% endcapture %}
+			{% capture ncategory %}{{ post.category}}{% endcapture %}
+			{% if year != ncategory %}
+				</ul>
+				<h3>{{ post.category}}</h3>
+				<ul>
+			{% endif %}
+		{% endunless %}
+			<li><a href="{{ post.url | prepend: site.baseurl  }}"> {{post.chapter}} : {{ post.title }}</a></li>
+	{% endfor %}
+	</ul>
+</section>

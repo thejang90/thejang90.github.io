@@ -1,0 +1,56 @@
+I"f<h1 id="clean-blog-by-start-bootstrap---github-pages-version">Clean Blog by Start Bootstrap - GitHub Pages Version</h1>
+
+<blockquote>
+  <p>This is a modified version of <a href="https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll">Clean Blog Jekyll</a> to be compatible with <a href="https://help.github.com/articles/using-jekyll-with-pages/">GitHub Pages</a>. Modified by <a href="https://github.com/trongthanh">Thanh Tran</a> for his own blog.</p>
+</blockquote>
+
+<p>The official Jekyll version of the Clean Blog theme by <a href="http://startbootstrap.com/">Start Bootstrap</a>.</p>
+
+<h3 id="view-live-demo-"><a href="https://trongthanh.github.io/startbootstrap-clean-blog-jekyll">View Live Demo →</a></h3>
+
+<h2 id="changes-from-original-jekyll-theme">Changes from Original Jekyll Theme</h2>
+
+<ul>
+  <li>Use SASS (SCSS flavor) instead of LESS, with minimal Bootstrap SCSS bundle</li>
+  <li>New choice of typography, remarkably Source Sans Pro for titles and Georgia for body texts</li>
+  <li>Support Vietnamese texts</li>
+  <li>Use client-side <a href="http://prismjs.com">Prism</a> syntax highlighter (compatible with GitHub-flavored Markdown code fences) instead of pre-rendered Pygments</li>
+  <li>Include Google Analytics script tag. Set your GA ID at <code class="highlighter-rouge">site.gaid</code></li>
+  <li>Include <a href="http://disqus.com">Disqus</a> script to enable commenting. Set your Disqus site’s ID at <code class="highlighter-rouge">site.disqus_site_id</code>. If not set, the comment section is omitted.</li>
+  <li>Full text search using Google site search. See <em>search.html</em>.</li>
+  <li>A compact posts archive (which list all published blog posts). I believe listing the post tittles is better than Search and it generate some sort of information scent.</li>
+  <li>Better image caption using <code class="highlighter-rouge">img + em</code> technique. See <a href="http://blog.int3ractive.com/startbootstrap-clean-blog-jekyll/2015/08/10/Muc-Toi-Thieu-Cua-Lap-Trinh-Vien-Front-End/">this example</a></li>
+  <li>Optional: To enable <a href="https://help.github.com/articles/atom-rss-feeds-for-github-pages/">automatic feed generation</a> supported by GitHub Pages, remove or rename the <em>feed.xml</em> file and add the following line to your site’s <em>_config.yml</em> file:
+```
+gems:
+    <ul>
+      <li>jekyll-feed
+```</li>
+    </ul>
+  </li>
+  <li>TODO: Facebook &amp; Twitter metadata</li>
+  <li>TODO: Social network sharing integration</li>
+  <li>TODO: Add modified / update time using front matter or pushed time</li>
+</ul>
+
+<h2 id="before-you-begin">Before You Begin</h2>
+
+<p>In the _config.yml file, the base URL is set to /startbootstrap-clean-blog-jekyll which is this themes gh-pages preview. It’s recommended that you remove the base URL before working with this theme locally!</p>
+
+<p>It should look like this:
+<code class="highlighter-rouge">baseurl: ""</code></p>
+
+<h2 id="whats-included">What’s Included</h2>
+
+<p>This Jekyll theme is customized to run well on GitHub Pages, therefore it must be built or previewed with <code class="highlighter-rouge">github-pages</code> gem to align the plugins and settings. Follow <a href="https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll">this article</a> for enviroment installation. After that, you can start previewing the generated site with <code class="highlighter-rouge">bundle exec jekyll serve</code>.</p>
+
+<p>A Grunt environment is also included. There are a number of tasks it performs like minification of the JavaScript, compiling of the SCSS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering <code class="highlighter-rouge">grunt</code> into your command line which will build the files. You can use <code class="highlighter-rouge">grunt watch</code> if you are working on the JavaScript or the SCSS.</p>
+
+<p>You can also run <code class="highlighter-rouge">grunt serve</code> to watch for changes and test the blog in one command.</p>
+
+<h2 id="support">Support</h2>
+
+<p>This theme is for my own blog which is customized with my own preferences. Issue reports are welcome but I may have little time to respond to questions or installation support.</p>
+
+<p>Besides, please visit Clean Blog’s template overview page on Start Bootstrap at http://startbootstrap.com/template-overviews/clean-blog/ for extra info and comments.</p>
+:ET

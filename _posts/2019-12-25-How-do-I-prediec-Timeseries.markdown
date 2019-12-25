@@ -2,7 +2,7 @@
 layout: post
 title:  "How do I predict Time Series"
 date:   2019-12-25 18:15:44 +0900
-category: 시계열분석
+category: 전력수요예측
 chapter : Ch.0
 ---
 

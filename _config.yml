@@ -12,7 +12,6 @@ github_username: theajang90
 facebook_username: MSwindow
 #gaid: ""
 disqus_site_id: mswindow
-
 # Plugins
 plugins:
   - jekyll-feed

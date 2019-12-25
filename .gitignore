@@ -114,7 +114,10 @@ proguard/
 *.rar
 *.tar
 *.zip
-
+.jekyll-cache
+_includes
+_layouts
+_site
 # Logs and databases #
 ######################
 *.log

@@ -114,6 +114,7 @@ proguard/
 *.rar
 *.tar
 *.zip
+.idea
 .jekyll-cache
 _includes
 _layouts

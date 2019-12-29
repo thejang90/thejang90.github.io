@@ -12,9 +12,9 @@ image: "img/post-bg-00.jpg"
 			<h3>{{ post.category}}</h3>
 			<ul>
 		{% else %}
-			{% capture categoty %}{{ post.category}}{% endcapture %}
+			{% capture category %}{{ post.category}}{% endcapture %}
 			{% capture ncategory %}{{ post.category}}{% endcapture %}
-			{% if year != ncategory %}
+			{% if category != ncategory %}
 				</ul>
 				<h3>{{ post.category}}</h3>
 				<ul>

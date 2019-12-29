@@ -13,7 +13,7 @@ image: "img/post-bg-00.jpg"
 			<ul>
 		{% else %}
 			{% capture category %}{{ post.category}}{% endcapture %}
-			{% capture ncategory %}{{ post.category}}{% endcapture %}
+			{% capture ncategory %}{{ post.next.category}}{% endcapture %}
 			{% if category != ncategory %}
 				</ul>
 				<h3>{{ post.category}}</h3>

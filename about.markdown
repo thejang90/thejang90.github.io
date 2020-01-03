@@ -12,6 +12,7 @@ permalink: /about/
     
 **Professional Experience** : Researcher, Tmax Data Corp., Korea(8/17-4/19)
     
-**Research Interests** : Power System, Smart Grid, Renewable Engergy, Energy AI, BigData  
+**Research Interests** : Power System, Smart Grid, Renewable Engergy, Energy AI, BigData    
 
-
+**Awards and Honors** : Grand Prize in the Solar Energy Prediction Category,2019 KPX Renewable Energy Prediction Contest
+                        Encouragement Prize in Wind Energy Prediction Division, 2019 KPX Renewable Energy Prediction Contest

@@ -14,6 +14,6 @@ permalink: /about/
     
 **Research Interests** : Power System, Smart Grid, Renewable Engergy, Energy AI, BigData    
 
-**Awards and Honors** : Grand Prize in the Solar Energy Prediction Category of Renewable Energy Prediction Contest, KPX, 2019 
-#Encouragement Prize in Wind Energy Prediction Division of Renewable Energy Prediction Contest, KPX,2019
-#Best Prize in 2017 Summer Peak Load Prediction Divison, KIEE, 2017 
+**Awards and Honors** : Grand Prize in the Solar Energy Prediction Category of Renewable Energy Prediction Contest, KPX, 2019   
+Encouragement Prize in Wind Energy Prediction Division of Renewable Energy Prediction Contest, KPX,2019  
+Best Prize in 2017 Summer Peak Load Prediction Divison, KIEE, 2017 

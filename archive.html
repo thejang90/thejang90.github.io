@@ -1,4 +1,3 @@
-<!--
 ---
 layout: page
 title: "Archive"
@@ -6,52 +5,19 @@ subtitle: "The archive of all published blog posts."
 description: "The archive of all published blog posts."
 image: "img/post-bg-00.jpg"
 ---
- Archive template modified from reyhan.org/2013/03/jekyll-archive-without-plugins.html
+<!-- Archive template modified from reyhan.org/2013/03/jekyll-archive-without-plugins.html -->
 <section class="archive">
-	{%for post in site.posts %}
-		{% unless post.next %}
-			<h3>{{ post.category}}</h3>
-			<ul>
-		{% else %}
-			{% capture category %}{{ post.category}}{% endcapture %}
-			{% capture ncategory %}{{ post.next.category}}{% endcapture %}
-			{% if category != ncategory %}
-				</ul>
-				<h3>{{ post.category}}</h3>
-				<ul>
-			{% endif %}
-		{% endunless %}
+	{% capture sites_cates %}{% for post in site.posts %}{{ post.categories }}{% unless categories.next %},{% endunless %}{% endfor %}{% endcapture %}
+	{% assign cates_list = sites_cates | split:',' | sort  | uniq %}
+	{% for item in (0..cates_list.size) %}{% unless item.next %}
+		{% capture this_word %}{{ cates_list[item] | strip_newlines }}{% endcapture %}
+		<h3>{{ this_word }}</h3>
+		<ul></ul>
+		{% for post in site.categories[this_word] %}
 			<li><a href="{{ post.url | prepend: site.baseurl  }}"> {{post.chapter}} : {{ post.title }}</a></li>
+	    {% endfor %}
+
+	{% endunless %}
 	{% endfor %}
-	</ul>
 </section>
--->
 
----
-layout: page
-title: "Archive"
-subtitle: "The archive of all published blog posts."
-description: "The archive of all published blog posts."
-image: "img/post-bg-00.jpg"
-permalink: /categories/
-title: Categories
----
-
-
-<div id="archives">
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
-
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
-  </div>
-{% endfor %}
-</div>

@@ -8,6 +8,8 @@ permalink: /about/
 ![aboutme](./img/edited_about-me.png#center)  
 **NAME** : Minseok Jang  
   
+**Email** : theajng90@gmail.com  
+  
 **Education** :   
 Ph.D. Student in Korea University
     
